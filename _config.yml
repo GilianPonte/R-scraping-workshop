@@ -1,9 +1,0 @@
-theme: jekyll-theme-cayman
-title: Normality
-plugins:
-  - jekyll-feed
----
-layout: default
-comments: true
-# other options
----
