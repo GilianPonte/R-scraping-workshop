@@ -1,6 +1,7 @@
 # Building a scraper ------------------------------------------------------
 #install.packages("rvest")
 library("rvest")
+options(scipen=999)
 
 ## setting the working directory
 setwd("C:/Users/Gilia/Documents/")
