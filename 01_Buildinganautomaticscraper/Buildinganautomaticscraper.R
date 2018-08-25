@@ -55,6 +55,5 @@ pricedata$Pages <- as.numeric(substr(pricedata$Pages, start = 51, stop = 53))
 
 
 #Save data
-write.csv2(pricedata)
-
+write.csv2(pricedata, file = "pricedata.csv")
 
