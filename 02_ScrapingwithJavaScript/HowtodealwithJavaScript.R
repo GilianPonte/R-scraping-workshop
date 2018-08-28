@@ -1,43 +1,37 @@
-library(xml2)
 library(rvest)
-library(stringr)
-library(plyr)
-library(dplyr)
-library(ggvis)
-library(knitr)
-options(digits = 4)
-
 
 rm(list = ls())
 
+
+##Set working directory
 setwd("C:/Users/Gilia/Documents/")
 
 url <- "https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex"
-  print(url)
-  
-  writeLines(sprintf(paste0("var url ='",url,"';
-var page = new WebPage()
-                     var fs = require('fs');
-                     
-                     
-                     page.open(url, function (status) {
-                     just_wait();
-                     });
-                     
-                     function just_wait() {
-                     setTimeout(function() {
-                     fs.write('ah_pricing.html', page.content, 'w');
-                     phantom.exit();
-                     }, 2500);
-                     }"), url), con="ah_pricing.js")
+print(url)
+
+writeLines(sprintf(paste0("var url ='",url,"';
+                          var page = new WebPage()
+                          var fs = require('fs');
+                          
+                          
+                          page.open(url, function (status) {
+                          just_wait();
+                          });
+                          
+                          function just_wait() {
+                          setTimeout(function() {
+                          fs.write('ah_pricing.html', page.content, 'w');
+                          phantom.exit();
+                          }, 2500);
+                          }"), url), con="ah_pricing.js")
 
 
-  system("phantomjs ah_pricing.js > ah_pricing.html")
-  write(readLines(pipe("phantomjs ah_pricing.js", "r")), "ah_pricing.html")
-  
-  html <- "ah_pricing.html"
-  pg <- read_html(html)
+system("phantomjs ah_pricing.js > ah_pricing.html")
+write(readLines(pipe("phantomjs ah_pricing.js", "r")), "ah_pricing.html")
 
-  #Get product name#
-  try(product_name <- pg %>% html_node(".multicol__column .bold") %>% html_text())
-  print(product_name)
+html <- "ah_pricing.html"
+pg <- read_html(html)
+
+#Get product name#
+try(product_name <- pg %>% html_node(".multicol__column .bold") %>% html_text())
+print(product_name)
