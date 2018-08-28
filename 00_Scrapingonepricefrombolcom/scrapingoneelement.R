@@ -16,7 +16,7 @@ print(price)
 price <- gsub("\n ", "", price)
 
 
-# Try to scrape the author of the book
+# Exercise 1: Try to scrape the author of the book
 
 author <- read_html(.....) %>%
   html_nodes(.....) %>% 
@@ -24,7 +24,7 @@ author <- read_html(.....) %>%
 
 print(author)
 
-# Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result.
+# Exercise 2: Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result.
 
 priceAH <- read_html("https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex") %>%
   html_nodes(.....) %>% 
