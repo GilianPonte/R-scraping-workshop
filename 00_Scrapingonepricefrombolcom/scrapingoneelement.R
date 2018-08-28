@@ -1,4 +1,3 @@
-
 # Scraping one element ----------------------------------------------------
 
 ## Settings
@@ -17,9 +16,18 @@ print(price)
 price <- gsub("\n ", "", price)
 
 
-# Try to get the author of the book
+# Try to scrape the author of the book
 
-## scrape the author
-price <- read_html(.....) %>%
+author <- read_html(.....) %>%
   html_nodes(.....) %>% 
   html_text()
+
+print(author)
+
+# Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result.
+
+priceAH <- read_html("https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex") %>%
+  html_nodes(.....) %>% 
+  html_text()
+
+print(priceAH)
