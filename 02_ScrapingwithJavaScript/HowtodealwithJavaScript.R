@@ -33,5 +33,5 @@ html <- "ah_pricing.html"
 pg <- read_html(html)
 
 #Get product name#
-try(product_name <- pg %>% html_node(".multicol__column .bold") %>% html_text())
+product_name <- pg %>% html_node(".multicol__column .bold") %>% html_text()
 print(product_name)
