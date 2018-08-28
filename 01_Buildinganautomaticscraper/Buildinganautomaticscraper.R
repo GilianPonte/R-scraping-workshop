@@ -1,4 +1,6 @@
 # Building a scraper ------------------------------------------------------
+rm(list = ls())
+
 #install.packages("rvest")
 library("rvest")
 options(scipen=999)
@@ -25,7 +27,7 @@ for (i in 1:nrow(pricedata)) {
   Sys.sleep(1)
   
   ## load page
-  try(result <- read_html(url))
+  try(pdp <- read_html(url))
   
   ## print url
   print(paste(i,url))
@@ -59,6 +61,6 @@ pricedata$Pages <- as.numeric(substr(pricedata$Pages, start = 51, stop = 53))
 write.csv2(pricedata, file = "pricedata.csv")
 
 
-# This time we are asked to add the subtitle to the scraper
-## Try to add the subtitle to the scraper
+# This time we are asked to add the delivery time to the scraper
+## Try to add the delivery time to the scraper
 
