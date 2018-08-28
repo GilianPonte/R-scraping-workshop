@@ -45,7 +45,7 @@ for (i in 1:nrow(pricedata)) {
   try(pricedata[i,5] <- rating[1])
   
   #Pages
-  try(pricedata[i,6] <- pdp %>% html_nodes(".product-small-specs--large li:nth-child(5)") %>% html_text())
+  try(pricedata[i,6] <- pdp %>% html_nodes(".product-small-specs--large li:nth-child(6)") %>% html_text())
 }
 
 
@@ -55,6 +55,10 @@ pricedata$Number_of_sellers <- as.numeric(substr(pricedata$Number_of_sellers, st
 pricedata$Pages <- as.numeric(substr(pricedata$Pages, start = 51, stop = 53))
 
 
-#Save data
+## Save data
 write.csv2(pricedata, file = "pricedata.csv")
+
+
+# This time we are asked to add the subtitle to the scraper
+## Try to add the subtitle to the scraper
 
