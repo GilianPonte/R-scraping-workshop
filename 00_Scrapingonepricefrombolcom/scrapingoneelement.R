@@ -17,3 +17,9 @@ print(price)
 price <- gsub("\n ", "", price)
 
 
+# Try to get the author of the book
+
+## scrape the author
+price <- read_html(.....) %>%
+  html_nodes(.....) %>% 
+  html_text()
