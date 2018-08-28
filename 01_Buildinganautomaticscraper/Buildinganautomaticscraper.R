@@ -14,20 +14,20 @@ pricedata <- data.frame(EAN = dataEAN, Article_name = NA, Selling_price = NA, Nu
 
 
 for (i in 1:nrow(pricedata)) {
+  
+  ## look for the EAN
   EAN <- as.character(pricedata[i,1])
   
+  ## create search url
   url <- paste0("https://www.bol.com/nl/s/algemeen/zoekresultaten/Ntt/",EAN,"/N/0/Nty/1/search/true/searchType/qck/defaultSearchContext/media_all/sc/media_all/index.html")
   
+  ## take a nap
   Sys.sleep(1)
-  result <- tryCatch({pdp <- read_html(url)}, error = function(err) {error <- err})
   
-  #SKIP ERROR 404 & 503
-  if(class(result$message) == "character"){
-    print(result$message)
-    next()
-  } 
+  ## load page
+  try(result <- read_html(url))
   
-  
+  ## print url
   print(paste(i,url))
   
   
