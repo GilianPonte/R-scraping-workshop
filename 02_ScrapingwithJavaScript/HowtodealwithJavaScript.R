@@ -32,6 +32,9 @@ write(readLines(pipe("phantomjs ah_pricing.js", "r")), "ah_pricing.html")
 html <- "ah_pricing.html"
 pg <- read_html(html)
 
-#Get product name#
-product_name <- pg %>% html_node(".multicol__column .bold") %>% html_text()
-print(product_name)
+# Exercise 1: Try to scrape the price of the lighter now
+price <- pg %>% 
+  html_node(..) %>% 
+  html_text()
+
+print(price)
