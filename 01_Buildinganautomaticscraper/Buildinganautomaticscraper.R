@@ -60,9 +60,15 @@ pricedata$Pages <- as.numeric(substr(pricedata$Pages, start = 51, stop = 53))
 ## Save data
 write.csv2(pricedata, file = "pricedata.csv")
 
-# Exercise 1: We want to change the scraper to scrape Coolblue.nl. Try to find the search url that we can use for the scraper.
 
-
-# Exercise 2: This time we are asked to add the delivery time to the bol.com scraper
+# Exercise 1: This time we are asked to add the delivery time to the bol.com scraper
 ## Try to add the delivery time to the bol.com scraper
 
+
+# Exercise 2: We want to change the scraper to scrape Amazon.de. Try to find the search url that we can use for the scraper.
+
+
+# Exercise 3: We want to scrape the prices of Amazon.de instead of Bol.com. Make a copy of the script and try to replace the CSS selectors to Coolblue.
+
+
+# Exercise 4: Compare the prices of the two stores. Where would you buy your books?
