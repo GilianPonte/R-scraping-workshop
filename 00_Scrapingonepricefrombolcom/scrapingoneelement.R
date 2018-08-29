@@ -24,10 +24,10 @@ author <- read_html(.....) %>%
 
 print(author)
 
-# Exercise 2: Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result.
+# Exercise 2: Go to Amazon.com and try to scrape the price of a product of your interest
 
-priceAH <- read_html("https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex") %>%
-  html_nodes(.....) %>% 
-  html_text()
 
-print(priceAH)
+
+# Exercise 3: Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result. Think of how a browser works.
+url <- https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex
+
