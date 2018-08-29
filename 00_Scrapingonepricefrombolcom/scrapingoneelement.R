@@ -28,6 +28,6 @@ print(author)
 
 
 
-# Exercise 3: Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result. Think of how a browser works.
+# Exercise 3: Try to srape the price from an Albert Heijn product. I have already provided the link. Try to think of why you are getting this result. Think of how this web page works.
 url <- https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex
 
