@@ -45,6 +45,7 @@ for (i in 1:nrow(pricedata)) {
   
   ## load page
   try(pdp <- read_html(url))
+  print(pdp)
   
   #Here we are going to fill the dataframe:
   ##Article name
