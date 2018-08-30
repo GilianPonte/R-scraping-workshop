@@ -43,10 +43,6 @@ for (i in 1:nrow(pricedata)) {
   ## load page
   try(pdp <- read_html(url))
   
-  ## print url
-  print(paste(i,url))
-  
-  
   #Article name
   try(pricedata[i,2] <- pdp %>% html_nodes(".pdp-header__title.bol_header") %>% html_text())
   
