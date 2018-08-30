@@ -14,7 +14,7 @@ getwd()
 url <- "https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex"
 print(url)
 
-## simulate a browser and run JavaScript
+## create JavaScript file to inject
 writeLines(sprintf(paste0("var url ='",url,"';
                           var page = new WebPage()
                           var fs = require('fs');
