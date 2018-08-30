@@ -8,7 +8,7 @@ options(scipen=999)
 ## setting the working directory
 setwd("C:/Users/Gilia/Documents/")
 
-## load EAN's
+## create dataframe with EAN's
 dataEAN <-as.data.frame(c("9781292164779",
               "9780262035613",
               "9780198739838",
