@@ -30,7 +30,8 @@ url <- "https://www.amazon.de/LG-Products-29UM68-P-DisplayPort-Reaktionszeit/dp/
 
 
 
-# Exercise 3: Try to srape the price from an Albert Heijn product. I have already provided the url. You will probably not succeed but try to think of why you are getting this result. Check out how the website loads its products.
+# Exercise 3: Try to srape the price from an Albert Heijn product. I have already provided the url. 
+# You will probably not succeed but try to think of why you are getting this result. Check out how the website loads its products.
 url <- "https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex"
 
 
