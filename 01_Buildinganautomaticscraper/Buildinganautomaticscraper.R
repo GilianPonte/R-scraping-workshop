@@ -71,18 +71,13 @@ pricedata$Pages <- as.numeric(substr(pricedata$Pages, start = 51, stop = 53))
 write.csv2(pricedata, file = "pricedata.csv")
 
 
-# Exercise 1: This time we are asked to add the delivery time to the bol.com scraper
-## First add one column to the dataframe we created
-
-## Copy a line of code where we already extract one element.
-
-## Find the CSS selectors output for the delivery time and add replace it in the line of code.
-
-## Change the number of the column where the output will be stored.
-
-## Run the creation of the dataframe and loop again.
-
-## Check your result in the "pricedata" element!
+# Exercise 1: This time we are asked to add the delivery time to the bol.com scraper. Here are some hints:
+#1 First add one column to the dataframe we created
+#2 Copy a line of code where we already extract one element.
+#3 Find the CSS selectors output for the delivery time and add replace it in the line of code.
+#4 Change the number of the column where the output will be stored.
+#5 Run the creation of the dataframe and loop again.
+#6 Check your result in the "pricedata" element!
 
 
 # Exercise 2: We want to change the scraper to scrape Amazon.de. Try to find the search url that we can use for the scraper.
@@ -91,7 +86,7 @@ write.csv2(pricedata, file = "pricedata.csv")
 # Exercise 3: We want to scrape the prices of Amazon.de instead of Bol.com. Make a copy of the script and try to replace the search url and css selectors in the code. The result should be a dataframe with only the EAN and price.
 
   ## Amazon.de dataframe
-  pricedataAmazonde <- data.frame(EAN = dataEAN, Selling_price = NA, stringsAsFactors=FALSE)
+  pricedata <- data.frame(EAN = dataEAN, Selling_price = NA, stringsAsFactors=FALSE)
 
   ## Loop for Amazon.de
 
