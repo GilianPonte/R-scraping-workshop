@@ -79,6 +79,8 @@ write.csv2(pricedata, file = "pricedata.csv")
 
 
 # Exercise 1: This time we are asked to add the delivery time to the bol.com scraper. Here are some hints:
+
+
 #1 First add one column to the "pricedata" dataframe.
 #2 Copy a line of code where we already extract one element.
 #3 Find the CSS selectors output for the delivery time and add replace it in the line of code.
