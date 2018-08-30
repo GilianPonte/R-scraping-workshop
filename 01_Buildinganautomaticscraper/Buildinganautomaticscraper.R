@@ -1,6 +1,7 @@
-# Building a scraper ------------------------------------------------------
+## clean the environment in R
 rm(list = ls())
 
+## install necesarry packages
 #install.packages("rvest")
 library("rvest")
 options(scipen=999)
@@ -24,7 +25,7 @@ names(dataEAN) <- "EAN"
 ## create dataframe
 pricedata <- data.frame(EAN = dataEAN, Article_name = NA, Selling_price = NA, Number_of_sellers = NA, Rating = NA, Pages = NA, stringsAsFactors=FALSE)
 
-
+## start of loop
 for (i in 1:nrow(pricedata)) {
   
   ## for testing
