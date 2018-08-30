@@ -95,6 +95,8 @@ write.csv2(pricedata, file = "pricedata.csv")
 
   ## Loop for Amazon.de
 
+
+
   ## Write a .csv file with the prices
   write.csv2(pricedata, file = "pricedataAmazonde.csv")
 
