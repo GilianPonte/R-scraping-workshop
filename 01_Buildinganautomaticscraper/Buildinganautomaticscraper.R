@@ -90,5 +90,9 @@ write.csv2(pricedata, file = "pricedata.csv")
 
 # Exercise 3: We want to scrape the prices of Amazon.de instead of Bol.com. Make a copy of the script and try to replace the search url and css selectors in the code. The result should be a dataframe with only the EAN and price.
 
+  ## Amazon.de dataframe
+  pricedataAmazonde <- data.frame(EAN = dataEAN, Selling_price = NA, stringsAsFactors=FALSE)
+
+  ## Loop for Amazon.de
 
 # Exercise 4: Compare the prices of the two stores. Where would you buy your books?
