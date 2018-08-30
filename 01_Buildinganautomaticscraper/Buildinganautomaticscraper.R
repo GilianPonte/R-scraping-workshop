@@ -63,6 +63,8 @@ for (i in 1:nrow(pricedata)) {
   
   ##Pages
   try(pricedata[i,6] <- pdp %>% html_nodes(".product-small-specs--large li:nth-child(6)") %>% html_text())
+  
+  
 }
 
 
