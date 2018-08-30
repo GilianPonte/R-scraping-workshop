@@ -2,10 +2,6 @@ library(rvest)
 
 rm(list = ls())
 
-
-##Set working directory
-setwd("C:/Users/Gilia/Documents/")
-
 url <- "https://www.ah.nl/producten/product/wi200726/ah-aansteker-flex"
 print(url)
 
