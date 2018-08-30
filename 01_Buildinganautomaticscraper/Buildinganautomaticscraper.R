@@ -27,6 +27,9 @@ pricedata <- data.frame(EAN = dataEAN, Article_name = NA, Selling_price = NA, Nu
 
 for (i in 1:nrow(pricedata)) {
   
+  ## for testing
+  i <- 1
+  
   ## look for the EAN
   EAN <- as.character(pricedata[i,1])
   
