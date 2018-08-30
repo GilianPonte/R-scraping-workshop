@@ -4,10 +4,12 @@ rm(list = ls())
 ## install necesarry packages
 #install.packages("rvest")
 library("rvest")
+
+## disable scientific numbers
 options(scipen=999)
 
 ## setting the working directory
-setwd("C:/Users/Gilia/Documents/")
+getwd()
 
 ## create dataframe with EAN's
 dataEAN <-as.data.frame(c("9781292164779",
