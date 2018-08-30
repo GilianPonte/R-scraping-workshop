@@ -17,6 +17,8 @@ dataEAN <-as.data.frame(c("9781292164779",
               "9781449358655",
               "9780393347777",
               "9781593273842"))
+
+## change name of the dataframe header
 names(dataEAN) <- "EAN"
 
 ## create dataframe
