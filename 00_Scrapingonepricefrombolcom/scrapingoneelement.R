@@ -1,5 +1,3 @@
-# Scraping one element ----------------------------------------------------
-
 ## Settings
 #install.packages("rvest")
 library("rvest")
