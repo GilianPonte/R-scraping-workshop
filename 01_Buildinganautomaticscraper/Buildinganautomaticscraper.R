@@ -111,5 +111,3 @@ write.csv2(pricedata, file = "pricedata.csv")
 
   ## Write a .csv file with the prices
   write.csv2(pricedata, file = "pricedataAmazonde.csv")
-
-# Exercise 4: Compare the prices of the two stores. Where would you buy your books?
