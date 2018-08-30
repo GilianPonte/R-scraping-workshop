@@ -43,20 +43,21 @@ for (i in 1:nrow(pricedata)) {
   ## load page
   try(pdp <- read_html(url))
   
-  #Article name
+  #Here we are going to fill the dataframe:
+  ##Article name
   try(pricedata[i,2] <- pdp %>% html_nodes(".pdp-header__title.bol_header") %>% html_text())
   
-  #Price
+  ##Price
   try(pricedata[i,3] <- pdp %>% html_nodes(".promo-price") %>% html_text())
   
-  #Sellers
+  ##Sellers
   try(pricedata[i,4] <- pdp %>% html_nodes(".buy-block__alternative-sellers-title") %>% html_text())
   
-  #Rating
+  ##Rating
   try(rating <- pdp %>% html_nodes(".rating-v2__average") %>% html_text())
   try(pricedata[i,5] <- rating[1])
   
-  #Pages
+  ##Pages
   try(pricedata[i,6] <- pdp %>% html_nodes(".product-small-specs--large li:nth-child(6)") %>% html_text())
 }
 
