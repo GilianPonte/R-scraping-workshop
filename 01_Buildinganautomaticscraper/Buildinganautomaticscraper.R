@@ -83,7 +83,7 @@ write.csv2(pricedata, file = "pricedata.csv")
 # Exercise 2: We want to change the scraper to scrape Amazon.de. Try to find the search url that we can use for the scraper.
 
 
-# Exercise 3: We want to scrape the prices of Amazon.de instead of Bol.com. Make a copy of the script and try to replace the search url and css selectors in the code. The result should be a dataframe with only the EAN and price.
+# Exercise 3: We want to scrape the prices of Amazon.de instead of Bol.com. Make a copy of the loop and try to replace the search url and css selectors in the code. The result should be a dataframe with only the EAN and price.
 
   ## Amazon.de dataframe
   pricedata <- data.frame(EAN = dataEAN, Selling_price = NA, stringsAsFactors=FALSE)
