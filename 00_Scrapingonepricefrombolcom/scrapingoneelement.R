@@ -4,6 +4,10 @@
 #install.packages("rvest")
 library("rvest")
 
+## read url
+url <- read_html("https://www.bol.com/nl/p/weapons-of-math-destruction/9200000072434087/")
+print(url)
+
 ## scrape one price
 price <- read_html("https://www.bol.com/nl/p/weapons-of-math-destruction/9200000072434087/") %>%
   html_nodes(".promo-price") %>% 
@@ -15,8 +19,8 @@ price <- gsub("\n ", "", price)
 ## check price
 print(price)
 
-# Exercise 1: Try to scrape the author of the book
 
+# Exercise 1: Try to scrape the author of the book
 author <- read_html("") %>%
   html_nodes("") %>% 
   html_text()
