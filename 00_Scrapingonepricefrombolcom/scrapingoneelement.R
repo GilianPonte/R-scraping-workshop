@@ -24,7 +24,7 @@ author <- read_html(.....) %>%
 
 print(author)
 
-# Exercise 2: Go to Amazon.com and try to scrape the price of a product of your interest
+# Exercise 2: Go to Amazon.de and try to scrape the price of a product of your interest
 
 
 
