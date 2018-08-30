@@ -35,6 +35,7 @@ for (i in 1:nrow(pricedata)) {
   
   ## create search url
   url <- paste0("https://www.bol.com/nl/s/algemeen/zoekresultaten/Ntt/",EAN,"/N/0/Nty/1/search/true/searchType/qck/defaultSearchContext/media_all/sc/media_all/index.html")
+  print(url)
   
   ## take a nap
   Sys.sleep(1)
