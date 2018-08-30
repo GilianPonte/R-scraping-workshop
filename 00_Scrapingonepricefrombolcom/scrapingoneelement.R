@@ -9,12 +9,11 @@ price <- read_html("https://www.bol.com/nl/p/weapons-of-math-destruction/9200000
   html_nodes(".promo-price") %>% 
   html_text()
 
-## check price
-print(price)
-
 ## get rid of the spaces
 price <- gsub("\n ", "", price)
 
+## check price
+print(price)
 
 # Exercise 1: Try to scrape the author of the book
 
