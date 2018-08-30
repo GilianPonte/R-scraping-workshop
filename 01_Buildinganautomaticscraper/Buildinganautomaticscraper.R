@@ -9,7 +9,15 @@ options(scipen=999)
 setwd("C:/Users/Gilia/Documents/")
 
 ## load EAN's
-dataEAN <- read.csv("EAN.csv", header = F)
+dataEAN <-as.data.frame(c("9781292164779",
+              "9780262035613",
+              "9780198739838",
+              "9780141985411",
+              "9781449361327",
+              "9781449358655",
+              "9780393347777",
+              "9781593273842"))
+names(dataEAN) <- "EAN"
 
 ## create dataframe
 pricedata <- data.frame(EAN = dataEAN, Article_name = NA, Selling_price = NA, Number_of_sellers = NA, Rating = NA, Pages = NA, stringsAsFactors=FALSE)
